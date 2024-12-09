@@ -17,7 +17,7 @@ function calcgpasilent() {
     boxData = readboxes();
 
     if (boxData == 1) {
-        return 'error';
+        return 23878123;
     }
 
     for (let i = 0; i < boxData.weights.length; i++){
@@ -87,9 +87,9 @@ function goalGpa() {
     totalGrade = Number(calcgpasilent())
 
 
-    if (totalGrade == 'error') {
+    if (totalGrade == 23878123) {
         gradeBox.value = "";
-        return;
+        return 1;
     }
 
 
