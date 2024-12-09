@@ -14,105 +14,19 @@
     </header>
     <div class="container" id="container">
         <div class="input-box" id="input-box">
-            <div class="row" id="1">
-                <input type="text" placeholder="Course">
-                <input type="number" placeholder="Weight">
-                <select>
-                    <option value="">Grade</option>
-                    <option value="4.00">A</option>
-                    <option value="3.67">A-</option>
-                    <option value="3.33">B+</option>
-                    <option value="3.00">B</option>
-                    <option value="2.67">B-</option>
-                    <option value="2.33">C+</option>
-                    <option value="2.00">C</option>
-                    <option value="1.67">C-</option>
-                    <option value="1.33">D+</option>
-                    <option value="1.00">D</option>
-                    <option value="0.00">F</option>
-                </select>
-            </div>
-            <details>
-                <summary>Assignments (Optional)</summary>
-                <ul>
-                    <li>
-                        <div class="row">
-                            <input type="text" placeholder="Assignment">
-                            <input type="number" placeholder="Weight">
-                            <input type="number" placeholder="Grade">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <input type="text" placeholder="Assignment">
-                            <input type="number" placeholder="Weight">
-                            <input type="number" placeholder="Grade">
-                        </div>
-                    </li>
-                    <li>
-                        <button>+ Add Another Assignment</button> 
-                        <button>- Remove an Assignment</button>
-                        <button>Calculate Course Grade</button>
-                    </li>
-                </ul>
-            </details>
-            <div id="2" class="row">
-                <input type="text"placeholder="Course">
-                <input type="number" placeholder="Weight">
-                <select>
-                    <option value="">Grade</option>
-                    <option value="4.00">A</option>
-                    <option value="3.67">A-</option>
-                    <option value="3.33">B+</option>
-                    <option value="3.00">B</option>
-                    <option value="2.67">B-</option>
-                    <option value="2.33">C+</option>
-                    <option value="2.00">C</option>
-                    <option value="1.67">C-</option>
-                    <option value="1.33">D+</option>
-                    <option value="1.00">D</option>
-                    <option value="0.00">F</option>
-                </select>
-            </div>
-            <details>
-                <summary>Assignments (Optional)</summary>
-                <ul>
-                    <li>
-                        <div class="row">
-                            <input type="text" placeholder="Assignment">
-                            <input type="number" placeholder="Weight">
-                            <input type="number" placeholder="Grade">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <input type="text" placeholder="Assignment">
-                            <input type="number" placeholder="Weight">
-                            <input type="number" placeholder="Grade">
-                        </div>
-                    </li>
-                    <li>
-                        <button>+ Add Another Assignment</button>
-                        <button>- Remove an Assignment</button>
-                        <button>Calculate Course Grade</button>
-                    </li>
-                </ul>
-            </details>
             <details id="before">
-                <summary>Goal GPA (Optional)</summary>
+                <summary id="goal">Goal GPA (Optional)</summary>
                 <ul>
                     <li>
                         <div class="row">
-                            <input type="text" placeholder="Goal GPA">
+                            <input type="text" placeholder="Goal GPA" id="goalvalue">
                         </div>
                     </li>
                 </ul>
             </details>
-            <button onclick="addDiv()">+ Add Another Course</button>
-            <button>- Remove a Course</button>
-            <br>
-            <button onclick="calcgpa()">Calculate GPA</button>
-            <button>Calculate Grade Needed for Goal GPA</button>
+            <button id="addc">+ Add a Course</button>
+            <button id="calc">Calculate GPA</button>
+            <button id="goalb">Calculate Grade Needed for Goal GPA</button>
         </div>
     </div>
     <script src="gpa.js"></script>
