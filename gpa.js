@@ -1,5 +1,7 @@
 const boxes = [];
 const assignments = [];
+const gradeweights = ['0.00', '1.00', '1.33', '1.67', '2.00', '2.33', '2.67', '3.00', '3.33', '3.67', '4.00'];
+
 
 
 
@@ -83,116 +85,25 @@ function goalGpa() {
 
 
 
-    gradeBox.value = "0.00";
-    totalGrade = Number(calcgpasilent())
+    for (let i = 0; i < gradeweights.length; i++) {
+        gradeBox.value = gradeweights[i];
+        totalGrade = Number(calcgpasilent())
 
+        if (totalGrade == 23878123) {
+            gradeBox.value = "";
+            return 1;
+        } else if (totalGrade >= gpagoal) {
+            return 0;
 
-    if (totalGrade == 23878123) {
-        gradeBox.value = "";
-        return 1;
+        }
+
     }
 
 
+    alert("GPA not achiveable")
+    gradeBox.value = "";
+    return 1;
 
-    if (totalGrade >= gpagoal) {
-        highlinput(gradeBox);
-        return 0;
-    } 
-    
-    gradeBox.value = "1.00";
-    totalGrade = Number(calcgpasilent())
-    
-    if (totalGrade >= gpagoal) {
-        highlinput(gradeBox);
-        return 0;
-    } 
-    
-    gradeBox.value = "1.33";
-    totalGrade = Number(calcgpasilent())
-    
-    
-    if (totalGrade >= gpagoal) {
-        highlinput(gradeBox);
-        return 0;
-    } 
-    
-    gradeBox.value = "1.67";
-    totalGrade = Number(calcgpasilent())
-    
-    
-    if (totalGrade >= gpagoal) {
-        highlinput(gradeBox);
-        return 0;
-    } 
-    
-    gradeBox.value = "2.00";
-    totalGrade = Number(calcgpasilent())
-    
-    
-    if (totalGrade >= gpagoal) {
-        highlinput(gradeBox);
-        return 0;
-    } 
-    
-    gradeBox.value = "2.33";
-    totalGrade = Number(calcgpasilent())
-    
-    if (totalGrade >= gpagoal) {
-        highlinput(gradeBox);
-        return 0;
-    } 
-    
-    gradeBox.value = "2.67";
-    totalGrade = Number(calcgpasilent())
-
-    
-    if (totalGrade >= gpagoal) {
-        highlinput(gradeBox);
-        return 0;
-    } 
-    
-    gradeBox.value = "3.00";
-    totalGrade = Number(calcgpasilent())
-    
-    
-    if (totalGrade >= gpagoal) {
-        highlinput(gradeBox);
-        return 0;
-    } 
-    
-    gradeBox.value = "3.33";
-    totalGrade = Number(calcgpasilent())   
-    
-    
-    if (totalGrade >= gpagoal) {
-        highlinput(gradeBox);
-        return 0;
-    }
-    
-    
-    gradeBox.value = "3.67";
-    totalGrade = Number(calcgpasilent())
-    
-    
-    if (totalGrade >= gpagoal) {
-        highlinput(gradeBox);
-        return 0;
-    } 
-
-
-    gradeBox.value = "4.00";
-    totalGrade = Number(calcgpasilent())
-    
-    
-    
-    if (totalGrade >= gpagoal) {
-        highlinput(gradeBox);
-        return 0;
-    } else {
-        alert("GPA not achiveable")
-        gradeBox.value = "";
-        return 1;
-    }
 
 
 }
