@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #1B1725;
+    background-color: #292531;
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
@@ -60,6 +60,19 @@ button {
     margin-top: 10px;
 }
 
+
+
+button:hover {
+    background-color: #292531;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
 details {
     font-family: Arial, sans-serif;
     color: #1B1725;
@@ -76,4 +89,11 @@ ul {
     padding-bottom: 1px;
     padding-top: 1px;
     padding-right: 0px;
+}
+
+
+
+.highlight {
+    border-color: #534B62;
+
 }
