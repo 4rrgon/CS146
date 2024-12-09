@@ -93,6 +93,7 @@ function goalGpa() {
             gradeBox.value = "";
             return 1;
         } else if (totalGrade >= gpagoal) {
+            highlinput(gradeBox);
             return 0;
 
         }
